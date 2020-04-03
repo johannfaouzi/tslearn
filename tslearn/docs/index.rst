@@ -34,12 +34,10 @@ Using ``pip`` should also work fine:
 
 .. code-block:: bash
 
-    pip install tslearn
+    python -m pip install tslearn
 
-Pre-requisites
-..............
-
-When using PyPI, C++ build tools should be available to perform installation.
+In this case, you should have ``numpy``, ``cython`` and C++ build tools
+available at build time.
 
 
 Using latest github-hosted version
@@ -50,18 +48,18 @@ repository hosted at github:
 
 .. code-block:: bash
 
-    pip install git+https://github.com/rtavenar/tslearn.git
+    python -m pip install https://github.com/rtavenar/tslearn/archive/master.zip
 
+In this case, you should have ``numpy``, ``cython`` and C++ build tools
+available at build time.
 
-Troubleshooting
-```````````````
 
 It seems on some platforms ``Cython`` dependency does not install properly.
 If you experiment such an issue, try installing it with the following command:
 
 .. code-block:: bash
 
-    pip install cython
+    python -m pip install cython
 
 
 before you start installing ``tslearn``.
@@ -79,6 +77,6 @@ From here, you can navigate to:
     gettingstarted
     variablelength
     dtw
+    integration_other_software
     reference
     auto_examples/index
-    contributing

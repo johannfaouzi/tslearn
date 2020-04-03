@@ -8,16 +8,12 @@ and this project adheres to
 
 Changelogs for this project are recorded in this file since v0.2.0.
 
-## [Towards v0.4.0]
+## [v0.3.1]
 
-### Changed
-* TimeSeriesScalerMeanVariance and TimeSeriesScalerMinMax are now completely sklearn-compliant
-* Bugfix in kneighbors() methods.
+### Fixed
 
-### Added
-* Nearest Neighbors on SAX representation (with custom distance)
-* Calculate pairwise distance matrix between SAX representations
-* PiecewiseAggregateApproximation can now handle variable lengths
+* Fixed a bug in `TimeSeriesSVC` and `TimeSeriesSVR` that caused user-input 
+`gamma` to be ignored (always treated as if it were `"auto"`) for `gak` kernel
 
 ## [v0.3.0]
 
@@ -70,6 +66,13 @@ and `OneD_SymbolicAggregateApproximation`
 * When constrained DTW is used, if the name of the constraint is not given but 
 its parameter is set, that is now considered sufficient to identify the 
 constraint.
+
+## [v0.2.4]
+
+### Fixed
+
+* The `tests` subdirectory is now made a python package and hence included in 
+wheels
 
 ## [v0.2.2]
 
